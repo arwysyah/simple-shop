@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/kenzo65"
+    android:orientation="vertical"
+    tools:context=".MenuPilihan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu "
+
+
+        android:textAlignment="center"
+        android:textColor="#220B24"
+        android:textCursorDrawable="@drawable/kenzo12"
+        android:textSize="18sp"
+        android:tooltipText="@android:string/copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/kenzo12" />
+
+    <Button
+        android:id="@+id/btn_barang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#95FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:text="Barang" />
+
+    <Button
+        android:id="@+id/btn_pelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#95FFFFFF"
+        android:text="Pelanggan" />
+
+    <Button
+        android:id="@+id/btn_penjualan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#95FFFFFF"
+        android:text="Penjualan" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
